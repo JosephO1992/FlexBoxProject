@@ -1,0 +1,162 @@
+/* Base Colors */
+
+:root {
+    --main-font-color: black;
+    --secondary-color: #0C2340;
+    --secondary-font-color: white;
+
+}
+
+/* Main Styling */
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+body, html {
+    height: 100%;
+}
+
+.col {
+    margin: auto;
+    width: 90%;
+    text-align: left;
+}
+
+#footer {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Containers */
+
+.subWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-outer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formButton {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Navigation Bar */
+
+.logo {
+    height: 50px;
+    margin: 0px;
+}
+
+li.menuItems {
+    list-style: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+a {
+    display: block;
+    color: var(--secondary-color);
+}
+
+ul.container {
+    text-align: center;
+    padding: 0px;
+}
+
+
+/* Element Styling */
+
+h1.title {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+.subContainer {
+    background-color: var(--secondary-color);
+    display: flex;
+    color: var(--secondary-font-color);
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0px;
+}
+
+.flex-outer li {
+    margin-top: 10px;
+}
+
+@media (min-width: 769px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    li.menuItems {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1069px) {
+    .wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .subContainer h2 {
+        font-size: 2rem;
+    }
+
+    .subContainer p {
+        font-size: 1.5rem;
+    }
+}
